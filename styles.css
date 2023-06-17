@@ -14,6 +14,9 @@ body {
   --icon-color: #6a737d;
   --border-color: #ff9a0045;
   --text-decoration-color: #ff9a00;
+
+  --skeleton-primary: #d1d1d1;
+  --skeleton-secondary: #f3f3f3;
 }
 
 .container {
@@ -88,7 +91,6 @@ body {
 .contact-info__block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .contact-info__block--center {
@@ -100,10 +102,26 @@ body {
     text-decoration: none;
     display: flex;
     justify-content: start;
+    padding: 4px 6px;
+    transition: all 0.1s ease-in;
 }
 
+.contact-info__item:hover {
+  background-color: var(--text-decoration-color);
+}
+
+.contact-info__item:focus {
+  background-color: var(--border-color);
+  outline: none;
+}
+
+.contact-info__item:active {
+  background-color: var(--durability-text-color);
+}
+
+
 .contact-info__item:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .contact-info__item-icon-wrapper {
@@ -111,6 +129,7 @@ body {
     width: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .contact-info__item-icon path {
@@ -129,6 +148,19 @@ body {
     object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
+}
+
+.contact-info__avatar-skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: var(--skeleton-primary);
+  }
+  100% {
+    background-color: var(--skeleton-secondary);
+  }
 }
 
 .intro {
