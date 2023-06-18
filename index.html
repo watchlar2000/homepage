@@ -1,10 +1,287 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Résumé</title>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <main>
+      <button data-id="theme-toggler" class="button">🔆</button>
+      <div class="resume">
+        <div class="container">
+          <div class="resume__block">
+            <h1 class="contact-info__header">Sergii Kochetov</h1>
+            <h3 class="contact-info__sub-header">Front-End Developer</h3>
+
+            <div class="contact_info_container fh">
+              <div class="contact-info__block">
+                <a
+                  href="https://github.com/watchlar2000"
+                  rel="author"
+                  class="contact-info__item"
+                  target="_blank"
+                >
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      class="contact-info__item-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M212.62 75.17A63.7 63.7 0 0 0 206.39 26A12 12 0 0 0 196 20a63.71 63.71 0 0 0-50 24h-20a63.71 63.71 0 0 0-50-24a12 12 0 0 0-10.39 6a63.7 63.7 0 0 0-6.23 49.17A61.5 61.5 0 0 0 52 104v8a60.1 60.1 0 0 0 45.76 58.28A43.66 43.66 0 0 0 92 192v4H76a20 20 0 0 1-20-20a44.05 44.05 0 0 0-44-44a12 12 0 0 0 0 24a20 20 0 0 1 20 20a44.05 44.05 0 0 0 44 44h16v12a12 12 0 0 0 24 0v-40a20 20 0 0 1 40 0v40a12 12 0 0 0 24 0v-40a43.66 43.66 0 0 0-5.76-21.72A60.1 60.1 0 0 0 220 112v-8a61.5 61.5 0 0 0-7.38-28.83ZM196 112a36 36 0 0 1-36 36h-48a36 36 0 0 1-36-36v-8a37.87 37.87 0 0 1 6.13-20.12a11.65 11.65 0 0 0 1.58-11.49a39.9 39.9 0 0 1-.4-27.72a39.87 39.87 0 0 1 26.41 17.8a12 12 0 0 0 10.1 5.53h32.35a12 12 0 0 0 10.11-5.53a39.84 39.84 0 0 1 26.41-17.8a39.9 39.9 0 0 1-.4 27.72a12 12 0 0 0 1.61 11.53A37.85 37.85 0 0 1 196 104Z"
+                      />
+                    </svg>
+                  </div>
+                  <span>My GitHub page</span>
+                </a>
+                <a href="" rel="author" class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      class="contact-info__item-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M128 60a44 44 0 1 0 44 44a44.05 44.05 0 0 0-44-44Zm0 64a20 20 0 1 1 20-20a20 20 0 0 1-20 20Zm0-112a92.1 92.1 0 0 0-92 92c0 77.36 81.64 135.4 85.12 137.83a12 12 0 0 0 13.76 0a259 259 0 0 0 42.18-39C205.15 170.57 220 136.37 220 104a92.1 92.1 0 0 0-92-92Zm31.3 174.71a249.35 249.35 0 0 1-31.3 30.18a249.35 249.35 0 0 1-31.3-30.18C80 167.37 60 137.31 60 104a68 68 0 0 1 136 0c0 33.31-20 63.37-36.7 82.71Z"
+                      />
+                    </svg>
+                  </div>
+                  <span>Kyiv, Ukraine</span>
+                </a>
+              </div>
+
+              <div class="contact-info__block contact-info__block--center">
+                <img
+                  class="contact-info__avatar contact-info__avatar-skeleton"
+                  src="assets/avatar.jpg"
+                  alt="Avatar"
+                />
+              </div>
+
+              <div class="contact-info__block">
+                <a
+                  href="mailto:sergii.koch@gmail.com"
+                  rel="author"
+                  class="contact-info__item"
+                >
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      class="contact-info__item-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M224 44H32a12 12 0 0 0-12 12v136a20 20 0 0 0 20 20h176a20 20 0 0 0 20-20V56a12 12 0 0 0-12-12Zm-30.85 24L128 127.72L62.85 68ZM44 188V83.28l75.89 69.57a12 12 0 0 0 16.22 0L212 83.28V188Z"
+                      />
+                    </svg>
+                  </div>
+                  <span>Email me</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/sergii-koch/"
+                  rel="author"
+                  class="contact-info__item"
+                  target="_blank"
+                >
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      class="contact-info__item-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M216 20H40a20 20 0 0 0-20 20v176a20 20 0 0 0 20 20h176a20 20 0 0 0 20-20V40a20 20 0 0 0-20-20Zm-4 192H44V44h168Zm-100-36v-52a12 12 0 0 1 21.43-7.41A40 40 0 0 1 192 152v24a12 12 0 0 1-24 0v-24a16 16 0 0 0-32 0v24a12 12 0 0 1-24 0Zm-16-52v52a12 12 0 0 1-24 0v-52a12 12 0 0 1 24 0ZM68 80a16 16 0 1 1 16 16a16 16 0 0 1-16-16Z"
+                      />
+                    </svg>
+                  </div>
+                  <span>LinkedIn Page</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="resume__block">
+            <div class="intro">
+              <div class="intro__icon-wrapper">
+                <svg
+                  class="intro__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+                  ></path>
+                </svg>
+              </div>
+              <p class="intro_text">
+                Hello, World! I've been doing programming for more than a year
+                and I love it.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="resume__block">
+            <div class="skills">
+              <h3 class="skills__header">Skills</h3>
+              <div class="skills__text">
+                <ul>
+                  <li>Vue.js (versions 2/3)</li>
+                  <li>Pinia, Vuex</li>
+                  <li>Typescript</li>
+                  <li>Unit testing</li>
+                </ul>
+                <ul>
+                  <li>Networking</li>
+                  <li>Flexibility</li>
+                  <li>Teamwork</li>
+                  <li>Problem-solving</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="resume__block">
+            <div class="main-info fh">
+              <div class="experiences">
+                <h3 class="experiences__header">Experience</h3>
+                <div class="experiences__company">
+                  <div class="experiences__company-header">
+                    <span class="experiences__company-header-durability"
+                      >April 2023 - Present</span
+                    >
+                    <h3 class="experiences__company-header-name">Freelance</h3>
+                  </div>
+
+                  <div class="experiences__company-project">
+                    <span class="experiences__company-project-role"
+                      >Vuejs FE Developer</span
+                    >
+                    <h3 class="experiences__company-project-name">
+                      Admin Panel
+                    </h3>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>Building UI</li>
+                      <li>Maintaining existing components</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="additional-info fv">
+                <div class="additional-info fv">
+                  <div class="additional-info__education">
+                    <h3 class="additional-info__education-header">Education</h3>
+                    <div class="additional-info__education-university">
+                      <span
+                        class="additional-info__education-university-durability"
+                        >2023</span
+                      >
+                      <h3
+                        class="additional-info__education-university-speciality"
+                      >
+                        Front-end School
+                      </h3>
+                      <p class="additional-info__education-university-name">
+                        Genesis Academy
+                      </p>
+                      <p class="additional-info__education-university-agenda">
+                        Acquired knowledge of clean code principles, SOLID,
+                        TypeScript, web architecture, unit testing, and
+                        optimization for efficient and maintainable software
+                        development.
+                      </p>
+                    </div>
+
+                    <div class="additional-info__education-university">
+                      <span
+                        class="additional-info__education-university-durability"
+                        >2022</span
+                      >
+                      <h3
+                        class="additional-info__education-university-speciality"
+                      >
+                        React Marathon
+                      </h3>
+                      <p class="additional-info__education-university-name">
+                        Softserve Academy
+                      </p>
+                      <p class="additional-info__education-university-agenda">
+                        Developed a strong understanding of React core concepts.
+                        Practised working with Git.
+                      </p>
+                    </div>
+
+                    <div class="additional-info__education-university">
+                      <span
+                        class="additional-info__education-university-durability"
+                        >2022 - Present</span
+                      >
+                      <h3
+                        class="additional-info__education-university-speciality"
+                      >
+                        Self-learning
+                      </h3>
+                      <p class="additional-info__education-university-agenda">
+                        Keep on actively expanding my javascript knowledge and
+                        skills.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="additional-info__languages">
+                    <h3 class="additional-info__languages-header">Languages</h3>
+                    <p class="additional-info__languages-item">
+                      English (full working proficiency)
+                    </p>
+                    <p class="additional-info__languages-item">
+                      Ukrainian (native)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <a href="https://github.com/watchlar2000/homepage" target="_black">
+            <svg
+              class="contact-info__item-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 256 256"
+            >
+              <path
+                fill="currentColor"
+                d="M212.62 75.17A63.7 63.7 0 0 0 206.39 26A12 12 0 0 0 196 20a63.71 63.71 0 0 0-50 24h-20a63.71 63.71 0 0 0-50-24a12 12 0 0 0-10.39 6a63.7 63.7 0 0 0-6.23 49.17A61.5 61.5 0 0 0 52 104v8a60.1 60.1 0 0 0 45.76 58.28A43.66 43.66 0 0 0 92 192v4H76a20 20 0 0 1-20-20a44.05 44.05 0 0 0-44-44a12 12 0 0 0 0 24a20 20 0 0 1 20 20a44.05 44.05 0 0 0 44 44h16v12a12 12 0 0 0 24 0v-40a20 20 0 0 1 40 0v40a12 12 0 0 0 24 0v-40a43.66 43.66 0 0 0-5.76-21.72A60.1 60.1 0 0 0 220 112v-8a61.5 61.5 0 0 0-7.38-28.83ZM196 112a36 36 0 0 1-36 36h-48a36 36 0 0 1-36-36v-8a37.87 37.87 0 0 1 6.13-20.12a11.65 11.65 0 0 0 1.58-11.49a39.9 39.9 0 0 1-.4-27.72a39.87 39.87 0 0 1 26.41 17.8a12 12 0 0 0 10.1 5.53h32.35a12 12 0 0 0 10.11-5.53a39.84 39.84 0 0 1 26.41-17.8a39.9 39.9 0 0 1-.4 27.72a12 12 0 0 0 1.61 11.53A37.85 37.85 0 0 1 196 104Z"
+              />
+            </svg>
+            <span>Source code on Github</span>
+          </a>
+        </footer>
+      </div>
+    </main>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
