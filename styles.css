@@ -1,22 +1,38 @@
+:root {
+  --primary-text-color: #181820;
+  --secondary-text-color: #5c5c62;
+  --durability-text-color: #6a737d9c;
+  --icon-color: #5a5e64;
+  --border-color: #ff9a0045;
+  --text-decoration-color: #ff9a00;
+  --primary-background: #f1f1f1;
+  --skeleton-primary: #d1d1d1;
+  --skeleton-secondary: #f3f3f3;
+}
+
+[data-theme='dark'] {
+  --primary-text-color: #efefef;
+  --secondary-text-color: #d7d7d7;
+  --durability-text-color: #9b9b9b9c;
+  --icon-color: #aeaeae;
+  --border-color: #ff990068;
+  --text-decoration-color: #ff9a00;
+  --primary-background: #3f3f3f;
+  --skeleton-primary: #d1d1d1;
+  --skeleton-secondary: #f3f3f3;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.1s ease-in-out;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
-
-  --primary-text-color: #181820;
-  --secondary-text-color: #5c5c62;
-  --durability-text-color: #6a737d9c;
-  --icon-color: #6a737d;
-  --border-color: #ff9a0045;
-  --text-decoration-color: #ff9a00;
-
-  --skeleton-primary: #d1d1d1;
-  --skeleton-secondary: #f3f3f3;
+  background-color: var(--primary-background);
 }
 
 .container {
@@ -38,9 +54,7 @@ body {
 }
 
 .resume {
-  margin: 50px auto;
-  border: 1px solid #f5f5f5;
-  box-shadow: 1px 1px 7px 7px #f5f5f5;
+  margin: 0 auto;
   padding: 30px 0;
   max-width: 900px;
 }
@@ -52,7 +66,6 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-
   .main-info,
   .contact_info_container {
       flex-direction: column;
@@ -106,13 +119,9 @@ body {
     transition: all 0.1s ease-in;
 }
 
-.contact-info__item:hover {
-  background-color: var(--text-decoration-color);
-}
-
+.contact-info__item:hover,
 .contact-info__item:focus {
   background-color: var(--border-color);
-  outline: none;
 }
 
 .contact-info__item:active {
@@ -306,4 +315,36 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+.button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  font: inherit;
+  font-size: 24px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--border-color);
+}
+
+.button:hover {
+  background-color: var(--text-decoration-color);
+}
+
+.button:focus {
+  background-color: var(--border-color);
+  outline: none;
+}
+
+.button:active {
+  background-color: var(--durability-text-color);
 }
