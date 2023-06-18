@@ -196,8 +196,12 @@ body {
 }
 
 .skills__text {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
   color: var(--secondary-text-color);
-  text-align: justify;
+  max-width: 500px;
+  margin-inline: auto;
 }
 
 .experiences {
@@ -263,6 +267,10 @@ body {
   margin-bottom: 20px;
 }
 
+.additional-info__education-university {
+  margin: 20px 0;
+}
+
 .additional-info__education-university-durability {
   color: var(--durability-text-color);
   text-align: left;
@@ -278,6 +286,12 @@ body {
 
 .additional-info__education-university-name {
   color: var(--secondary-text-color);
+  font-weight: 600;
+}
+
+.additional-info__education-university-agenda {
+  color: var(--icon-color);
+  font-size: 14px;
 }
 
 .additional-info__languages {
