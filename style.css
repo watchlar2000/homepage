@@ -27,19 +27,19 @@
   --space-xl-2xl: clamp(3.375rem, 2.8098rem + 2.8261vw, 5rem);
   --space-2xl-3xl: clamp(4.5rem, 3.4565rem + 5.2174vw, 7.5rem);
   --space-3xl-2xl: clamp(5rem, 7.3587rem + -3.0435vw, 6.75rem);
-  --color-dark: #222326;
-  --color-dark-tint: #4d4c4c;
-  --color-dark-muted: #838383;
-  --color-light: #fbfafc;
-  --color-brand: #060899;
-  --color-brand-tint: #4043eb;
+  --color-dark: #536644;
+  --color-dark-tint: #2f302e;
+  --color-dark-muted: #456d24;
+  --color-light: hsl(41, 100%, 95%);
+  --color-brand: hsl(60, 1%, 23%);
   --primary-text-color: var(--color-dark);
   --secondary-text-color: var(--color-dark-tint);
   --durability-text-color: var(--color-dark-muted);
-  --icon-color: var(--color-brand);
+  --icon-color: #78ad4c;
   --text-decoration-color: var(--color-brand);
-  --focus-color: #fd9115;
+  --focus-color: #3e9726;
   --border-color: var(--color-brand);
+  --body-background: var(--color-dark);
   --leading: 1.5;
   --leading-fine: 1.1;
   --leading-loose: 1.6;
@@ -176,7 +176,7 @@ img:not([alt]) {
 body {
   font-family: var(--body-font);
   color: var(--primary-text-color);
-  background-color: #fd9115;
+  background-color: var(--body-background);
   font-size: var(--step-1);
   line-height: var(--leading);
   letter-spacing: 0.01em;
@@ -272,7 +272,7 @@ svg[role='img'][width][height] {
 .container > * {
   margin: var(--space-2xs);
   padding: var(--space-l);
-  border: 4px solid var(--border-color);
+  border: 1px solid var(--border-color);
   border-radius: 0.5rem;
 }
 
@@ -402,10 +402,7 @@ svg[role='img'][width][height] {
 }
 
 .heading-highlight {
-  background-color: var(--color-brand);
-  color: var(--color-light);
-  display: inline;
-  width: fit-content;
+  color: var(--color-brand);
 }
 
 .prose {
