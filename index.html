@@ -3,23 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Résumé</title>
+    <title>Sergiuzh - Front-end Developer Résumé</title>
   </head>
   <body>
-    <main>
-      <section>
+    <main class="main">
+      <section class="flow">
         <div class="container">
-          <header class="resume__block flow">
-            <h1 class="contact-info__header">Sergiuzh</h1>
-            <h2 class="contact-info__sub-header">Front-end Developer</h2>
-
+          <header class="flow">
+            <h1 class="heading-highlight">Hello there!</h1>
+            <p>I'm <strong>Sergiuzh</strong>, a front-end developer</p>
+          </header>
+        </div>
+        <div class="container">
+          <section class="resume__block">
+            <h2 class="visually-hidden">Contact Information</h2>
             <div class="contact_info_container fh">
               <div class="contact-info__block">
                 <a
                   href="https://en.wikipedia.org/wiki/WASP-17b"
                   rel="author noopener noreferrer"
                   class="contact-info__item"
+                  aria-label="Location: WASP-17b (Exoplanet reference)"
                 >
                   <div class="contact-info__item-icon-wrapper">
                     <svg
@@ -36,10 +47,9 @@
                       ></path>
                     </svg>
                   </div>
-                  <span>WASP-17b, constellation Scorpius</span>
+                  <span>WASP-17b</span>
                 </a>
               </div>
-
               <div class="contact-info__block contact-info__block--center">
                 <img
                   class="contact-info__avatar"
@@ -47,13 +57,12 @@
                   alt="Portrait of Sergiuzh"
                 />
               </div>
-
               <div class="contact-info__block contact-info__block--right">
                 <a
                   href="https://ua.linkedin.com/company/binary-studio_241166"
                   rel="author noopener noreferrer"
                   class="contact-info__item"
-                  aria-label="Link to linkedin profile of a Binary Studio where Sergiuzh would love to work"
+                  aria-label="LinkedIn: Binary Studio, where Sergiuzh would love to work"
                 >
                   <div class="contact-info__item-icon-wrapper">
                     <svg
@@ -73,14 +82,15 @@
                       ></path>
                     </svg>
                   </div>
-                  <span>binary-studio</span>
+                  <span>Binary</span>
                 </a>
               </div>
             </div>
-          </header>
+          </section>
         </div>
         <div class="container">
-          <article class="resume__block">
+          <section class="resume__block flow">
+            <h2 class="skills__header heading-highlight">Briefly about me</h2>
             <div class="intro">
               <div class="intro__icon-wrapper">
                 <svg
@@ -99,33 +109,34 @@
                   ></path>
                 </svg>
               </div>
-              <p class="intro_text">
-                Hey! I'm Sergiuzh, a web developer proficient in modern
-                JavaScript frameworks. I'm experienced in building scalable,
-                user-friendly web applications using front-end frameworks,
-                Node.js, and PostgreSQL. Strong in UI optimization, database
-                design, and software architecture principles. Passionate about
-                delivering robust and maintainable solutions through clean code,
+              <p class="intro__text prose">
+                I'm a web developer proficient in modern JavaScript frameworks.
+                I'm experienced in building scalable, user-friendly web
+                applications using front-end frameworks, Node.js, and
+                PostgreSQL. Strong in UI optimization, database design, and
+                software architecture principles. Passionate about delivering
+                robust and maintainable solutions through clean code,
                 performance optimization, security best practices, and web
                 accessibility.
               </p>
             </div>
-          </article>
+          </section>
         </div>
         <div class="container">
-          <article class="resume__block">
+          <section class="resume__block">
             <div class="skills flow">
-              <h3 class="skills__header">Skills</h3>
+              <h2 class="skills__header heading-highlight">Skills</h2>
               <p class="skills__text">
-                Problem solving, Continuous Learning, Team Collaboration
+                Problem solving, Continuous Learning, Team Collaboration,
+                Creativity
               </p>
             </div>
-          </article>
+          </section>
         </div>
         <div class="container">
-          <article class="resume__block">
+          <section class="resume__block">
             <div class="skills flow">
-              <h3 class="skills__header">Technologies</h3>
+              <h2 class="skills__header heading-highlight">Technologies</h2>
               <p class="skills__text">
                 <strong>Front-end:</strong> Javascript frameworks (Vue/Nuxt.js,
                 Svelte/Svetelkit, Angular, React/Next.js), TypeScript, HTML5,
@@ -140,35 +151,39 @@
                 Query, AWS
               </p>
             </div>
-          </article>
+          </section>
         </div>
         <div class="container">
-          <article class="resume__block">
+          <section class="resume__block">
             <div class="main-info fh">
               <div class="experiences flow">
-                <h3 class="experiences__header">Experience</h3>
-                <div class="experiences__company">
+                <h2 class="experiences__header heading-highlight">
+                  Experience
+                </h2>
+                <div class="experiences__company flow">
                   <div class="experiences__company-header">
                     <span class="experiences__company-header-durability"
                       >2023-Present</span
                     >
-                    <h4 class="experiences__company-header-name">Freelance</h4>
+                    <h3 class="experiences__company-header-name">Freelance</h3>
                   </div>
 
                   <div class="experiences__company-project flow">
                     <span class="experiences__company-project-role"
-                      >Full-Stack Developer</span
+                      >Front-end Developer</span
                     >
-                    <h3 class="experiences__company-project-name">
-                      Portfolio Website + Admin Panel
-                    </h3>
-                    <a
-                      href="https://www.irynalisogor.com"
-                      rel="author noopener noreferrer"
-                      aria-label="Link to portfolio website"
-                      class="experiences__company-project-link"
-                      >Click to visit website</a
-                    >
+                    <div>
+                      <a
+                        href="https://www.irynalisogor.com"
+                        rel="author noopener noreferrer"
+                        aria-label="Link to portfolio website"
+                        class="experiences__company-project-link"
+                      >
+                        <h4 class="experiences__company-project-name">
+                          Portfolio Website + Admin Panel
+                        </h4></a
+                      >
+                    </div>
                     <div>
                       <ul class="experiences__company-project-responsibilities">
                         <li>Designed modular architecture</li>
@@ -181,39 +196,54 @@
                   </div>
                 </div>
               </div>
-              <div class="additional-info fv">
-                <div class="additional-info fv">
-                  <div class="additional-info__education">
-                    <h3 class="additional-info__education-header">Education</h3>
-                    <div class="additional-info__education-university">
+              <div class="additional-info fv flow">
+                <div class="additional-info__education flow">
+                  <h2
+                    class="additional-info__education-header heading-highlight"
+                  >
+                    Education
+                  </h2>
+                  <div class="additional-info__education-university flow">
+                    <div>
                       <span
                         class="additional-info__education-university-durability"
                       >
                         2022 - Present
                       </span>
-                      <h4
+                      <h3
                         class="additional-info__education-university-speciality"
                       >
-                        Full-Stack Development
-                      </h4>
-                      <p class="additional-info__education-university-name">
-                        Self-education
-                      </p>
+                        Web Development
+                      </h3>
                     </div>
+                    <p class="additional-info__education-university-name">
+                      Self-education
+                    </p>
                   </div>
+                </div>
 
-                  <div class="additional-info__languages">
-                    <h3 class="additional-info__languages-header">Languages</h3>
-                    <p class="additional-info__languages-item">JavaScript</p>
-                    <p class="additional-info__languages-item">English</p>
-                    <p class="additional-info__languages-item">Ukrainian</p>
+                <div class="additional-info__languages flow">
+                  <h2
+                    class="additional-info__languages-header heading-highlight"
+                  >
+                    Languages
+                  </h2>
+                  <div>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>JavaScript</li>
+                      <li>English</li>
+                      <li>Ukrainian</li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-          </article>
+          </section>
         </div>
       </section>
     </main>
+    <footer class="page-footer">
+      <p>© 2025 🥰</p>
+    </footer>
   </body>
 </html>
