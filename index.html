@@ -1,10 +1,249 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Résumé</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sergiuzh - Front-end Developer Résumé</title>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <main class="main">
+      <section class="flow">
+        <div class="container">
+          <header class="flow">
+            <h1 class="heading-highlight">Hello there!</h1>
+            <p>I'm <strong>Sergiuzh</strong>, a front-end developer</p>
+          </header>
+        </div>
+        <div class="container">
+          <section class="resume__block">
+            <h2 class="visually-hidden">Contact Information</h2>
+            <div class="contact_info_container fh">
+              <div class="contact-info__block">
+                <a
+                  href="https://en.wikipedia.org/wiki/WASP-17b"
+                  rel="author noopener noreferrer"
+                  class="contact-info__item"
+                  aria-label="Location: WASP-17b (Exoplanet reference)"
+                >
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      class="contact-info__item-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 384 512"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0
+                        192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535
+                        13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817
+                        80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>WASP-17b</span>
+                </a>
+              </div>
+              <div class="contact-info__block contact-info__block--center">
+                <img
+                  class="contact-info__avatar"
+                  src="assets/avatar.png"
+                  alt="Portrait of Sergiuzh"
+                />
+              </div>
+              <div class="contact-info__block contact-info__block--right">
+                <a
+                  href="https://ua.linkedin.com/company/binary-studio_241166"
+                  rel="author noopener noreferrer"
+                  class="contact-info__item"
+                  aria-label="LinkedIn: Binary Studio, where Sergiuzh would love to work"
+                >
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      class="contact-info__item-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9
+                        480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4
+                        416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9
+                        96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5
+                        38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9
+                        27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5
+                        62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>Binary</span>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="container">
+          <section class="resume__block flow">
+            <h2 class="skills__header heading-highlight">Briefly about me</h2>
+            <div class="intro">
+              <div class="intro__icon-wrapper">
+                <svg
+                  class="intro__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7
+                    24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0
+                    26.5 21.5 48 48 48h128c26.5 0 48-21.5
+                    48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64
+                    64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0
+                    103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0
+                    48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+                  ></path>
+                </svg>
+              </div>
+              <p class="intro__text prose">
+                I'm a web developer proficient in modern JavaScript frameworks.
+                I'm experienced in building scalable, user-friendly web
+                applications using front-end frameworks, Node.js, and
+                PostgreSQL. Strong in UI optimization, database design, and
+                software architecture principles. Passionate about delivering
+                robust and maintainable solutions through clean code,
+                performance optimization, security best practices, and web
+                accessibility.
+              </p>
+            </div>
+          </section>
+        </div>
+        <div class="container">
+          <section class="resume__block">
+            <div class="skills flow">
+              <h2 class="skills__header heading-highlight">Skills</h2>
+              <p class="skills__text">
+                Problem solving, Continuous Learning, Team Collaboration,
+                Creativity
+              </p>
+            </div>
+          </section>
+        </div>
+        <div class="container">
+          <section class="resume__block">
+            <div class="skills flow">
+              <h2 class="skills__header heading-highlight">Technologies</h2>
+              <p class="skills__text">
+                <strong>Front-end:</strong> Javascript frameworks (Vue/Nuxt.js,
+                Svelte/Svetelkit, Angular, React/Next.js), TypeScript, HTML5,
+                CSS3, Tailwind.
+              </p>
+              <p class="skills__text">
+                <strong>Back-end & Databases:</strong> Node.js, PostgreSQL, ORMs
+                (Drizzle, Prisma), Oauth, Supabase.
+              </p>
+              <p class="skills__text">
+                <strong>Tools & Testing:</strong> Docker, Vitest, Tanstack
+                Query, AWS
+              </p>
+            </div>
+          </section>
+        </div>
+        <div class="container">
+          <section class="resume__block">
+            <div class="main-info fh">
+              <div class="experiences flow">
+                <h2 class="experiences__header heading-highlight">
+                  Experience
+                </h2>
+                <div class="experiences__company flow">
+                  <div class="experiences__company-header">
+                    <span class="experiences__company-header-durability"
+                      >2023-Present</span
+                    >
+                    <h3 class="experiences__company-header-name">Freelance</h3>
+                  </div>
+
+                  <div class="experiences__company-project flow">
+                    <span class="experiences__company-project-role"
+                      >Front-end Developer</span
+                    >
+                    <div>
+                      <a
+                        href="https://www.irynalisogor.com"
+                        rel="author noopener noreferrer"
+                        aria-label="Link to portfolio website"
+                        class="experiences__company-project-link"
+                      >
+                        <h4 class="experiences__company-project-name">
+                          Portfolio Website + Admin Panel
+                        </h4></a
+                      >
+                    </div>
+                    <div>
+                      <ul class="experiences__company-project-responsibilities">
+                        <li>Designed modular architecture</li>
+                        <li>Crafted a responsive UI</li>
+                        <li>Optimized image delivery</li>
+                        <li>Implemented secure content management</li>
+                        <li>Structured efficient database queries</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="additional-info fv flow">
+                <div class="additional-info__education flow">
+                  <h2
+                    class="additional-info__education-header heading-highlight"
+                  >
+                    Education
+                  </h2>
+                  <div class="additional-info__education-university flow">
+                    <div>
+                      <span
+                        class="additional-info__education-university-durability"
+                      >
+                        2022 - Present
+                      </span>
+                      <h3
+                        class="additional-info__education-university-speciality"
+                      >
+                        Web Development
+                      </h3>
+                    </div>
+                    <p class="additional-info__education-university-name">
+                      Self-education
+                    </p>
+                  </div>
+                </div>
+
+                <div class="additional-info__languages flow">
+                  <h2
+                    class="additional-info__languages-header heading-highlight"
+                  >
+                    Languages
+                  </h2>
+                  <div>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>JavaScript</li>
+                      <li>English</li>
+                      <li>Ukrainian</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p>© 2025 🥰</p>
+    </footer>
   </body>
 </html>
