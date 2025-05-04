@@ -16,21 +16,21 @@
     <main class="main">
       <section class="flow">
         <div class="container">
-          <header class="resume__block flow">
-            <h1 class="contact-info__header article-heading">Hello there!</h1>
-            <p class="contact-info__sub-header">
-              I'm <strong>Sergiuzh</strong>, a front-end developer
-            </p>
+          <header class="flow">
+            <h1 class="heading-highlight">Hello there!</h1>
+            <p>I'm <strong>Sergiuzh</strong>, a front-end developer</p>
           </header>
         </div>
         <div class="container">
-          <article class="resume__block flow">
+          <section class="resume__block">
+            <h2 class="visually-hidden">Contact Information</h2>
             <div class="contact_info_container fh">
               <div class="contact-info__block">
                 <a
                   href="https://en.wikipedia.org/wiki/WASP-17b"
                   rel="author noopener noreferrer"
                   class="contact-info__item"
+                  aria-label="Location: WASP-17b (Exoplanet reference)"
                 >
                   <div class="contact-info__item-icon-wrapper">
                     <svg
@@ -50,7 +50,6 @@
                   <span>WASP-17b</span>
                 </a>
               </div>
-
               <div class="contact-info__block contact-info__block--center">
                 <img
                   class="contact-info__avatar"
@@ -58,13 +57,12 @@
                   alt="Portrait of Sergiuzh"
                 />
               </div>
-
               <div class="contact-info__block contact-info__block--right">
                 <a
                   href="https://ua.linkedin.com/company/binary-studio_241166"
                   rel="author noopener noreferrer"
                   class="contact-info__item"
-                  aria-label="Link to linkedin profile of a Binary Studio where Sergiuzh would love to work"
+                  aria-label="LinkedIn: Binary Studio, where Sergiuzh would love to work"
                 >
                   <div class="contact-info__item-icon-wrapper">
                     <svg
@@ -88,11 +86,11 @@
                 </a>
               </div>
             </div>
-          </article>
+          </section>
         </div>
         <div class="container">
-          <article class="resume__block flow">
-            <h3 class="skills__header article-heading">Briefly about me</h3>
+          <section class="resume__block flow">
+            <h2 class="skills__header heading-highlight">Briefly about me</h2>
             <div class="intro">
               <div class="intro__icon-wrapper">
                 <svg
@@ -122,22 +120,23 @@
                 accessibility.
               </p>
             </div>
-          </article>
+          </section>
         </div>
         <div class="container">
-          <article class="resume__block">
+          <section class="resume__block">
             <div class="skills flow">
-              <h3 class="skills__header article-heading">Skills</h3>
+              <h2 class="skills__header heading-highlight">Skills</h2>
               <p class="skills__text">
-                Problem solving, Continuous Learning, Team Collaboration
+                Problem solving, Continuous Learning, Team Collaboration,
+                Creativity
               </p>
             </div>
-          </article>
+          </section>
         </div>
         <div class="container">
-          <article class="resume__block">
+          <section class="resume__block">
             <div class="skills flow">
-              <h3 class="skills__header article-heading">Technologies</h3>
+              <h2 class="skills__header heading-highlight">Technologies</h2>
               <p class="skills__text">
                 <strong>Front-end:</strong> Javascript frameworks (Vue/Nuxt.js,
                 Svelte/Svetelkit, Angular, React/Next.js), TypeScript, HTML5,
@@ -152,19 +151,21 @@
                 Query, AWS
               </p>
             </div>
-          </article>
+          </section>
         </div>
         <div class="container">
-          <article class="resume__block">
+          <section class="resume__block">
             <div class="main-info fh">
               <div class="experiences flow">
-                <h3 class="experiences__header article-heading">Experience</h3>
+                <h2 class="experiences__header heading-highlight">
+                  Experience
+                </h2>
                 <div class="experiences__company flow">
                   <div class="experiences__company-header">
                     <span class="experiences__company-header-durability"
                       >2023-Present</span
                     >
-                    <h4 class="experiences__company-header-name">Freelance</h4>
+                    <h3 class="experiences__company-header-name">Freelance</h3>
                   </div>
 
                   <div class="experiences__company-project flow">
@@ -178,9 +179,9 @@
                         aria-label="Link to portfolio website"
                         class="experiences__company-project-link"
                       >
-                        <h3 class="experiences__company-project-name">
+                        <h4 class="experiences__company-project-name">
                           Portfolio Website + Admin Panel
-                        </h3></a
+                        </h4></a
                       >
                     </div>
                     <div>
@@ -195,51 +196,49 @@
                   </div>
                 </div>
               </div>
-              <div class="additional-info fv">
-                <div class="additional-info fv flow">
-                  <div class="additional-info__education flow">
-                    <h3
-                      class="additional-info__education-header article-heading"
-                    >
-                      Education
-                    </h3>
-                    <div class="additional-info__education-university flow">
-                      <div>
-                        <span
-                          class="additional-info__education-university-durability"
-                        >
-                          2022 - Present
-                        </span>
-                        <h4
-                          class="additional-info__education-university-speciality"
-                        >
-                          Web Development
-                        </h4>
-                      </div>
-                      <p class="additional-info__education-university-name">
-                        Self-education
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="additional-info__languages flow">
-                    <h3
-                      class="additional-info__languages-header article-heading"
-                    >
-                      Languages
-                    </h3>
+              <div class="additional-info fv flow">
+                <div class="additional-info__education flow">
+                  <h2
+                    class="additional-info__education-header heading-highlight"
+                  >
+                    Education
+                  </h2>
+                  <div class="additional-info__education-university flow">
                     <div>
-                      <ul class="experiences__company-project-responsibilities">
-                        <li>JavaScript</li>
-                        <li>English</li>
-                        <li>Ukrainian</li>
-                      </ul>
+                      <span
+                        class="additional-info__education-university-durability"
+                      >
+                        2022 - Present
+                      </span>
+                      <h3
+                        class="additional-info__education-university-speciality"
+                      >
+                        Web Development
+                      </h3>
                     </div>
+                    <p class="additional-info__education-university-name">
+                      Self-education
+                    </p>
+                  </div>
+                </div>
+
+                <div class="additional-info__languages flow">
+                  <h2
+                    class="additional-info__languages-header heading-highlight"
+                  >
+                    Languages
+                  </h2>
+                  <div>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>JavaScript</li>
+                      <li>English</li>
+                      <li>Ukrainian</li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-          </article>
+          </section>
         </div>
       </section>
     </main>
