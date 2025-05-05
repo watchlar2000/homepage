@@ -293,7 +293,7 @@ svg[role='img'][width][height] {
   flex-direction: column;
 }
 
-@media screen and (width <= 770px) {
+@media screen and (max-width: 770px) {
   .main-info,
   .contact-info__container {
     flex-direction: column;
